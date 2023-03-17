@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230313 13:14:48.982" rpa="false" schemaversion="3">
+<suite id="s1" name="Projet1- FILS DE CABLE - Filtre" source="C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\Projet1- FILS DE CABLE - Filtre">
+<suite id="s1-s1" name="test1-1 Cat2" source="C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\Projet1- FILS DE CABLE - Filtre\test1-1_Cat2.robot">
+<test id="s1-s1-t1" name="Cables et fils electrique-Fils de cable" line="9">
+<kw name="open the browser with URL" library="resources">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230313 13:14:49.785" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230313 13:14:53.898" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230313 13:14:53.898" level="FAIL">WebDriverException: Message: unknown error: Chrome failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00CE37D3]
+	(No symbol) [0x00C78B81]
+	(No symbol) [0x00B7B36D]
+	(No symbol) [0x00B9B7EF]
+	(No symbol) [0x00B96FC9]
+	(No symbol) [0x00BD1ED5]
+	(No symbol) [0x00BD1B2C]
+	(No symbol) [0x00BCB216]
+	(No symbol) [0x00BA0D97]
+	(No symbol) [0x00BA253D]
+	GetHandleVerifier [0x00F5ABF2+2510930]
+	GetHandleVerifier [0x00F88EC1+2700065]
+	GetHandleVerifier [0x00F8C86C+2714828]
+	GetHandleVerifier [0x00D93480+645344]
+	(No symbol) [0x00C80FD2]
+	(No symbol) [0x00C86C68]
+	(No symbol) [0x00C86D4B]
+	(No symbol) [0x00C90D6B]
+	BaseThreadInitThunk [0x76DE00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775F7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775F7B8E+238]
+</msg>
+<status status="FAIL" starttime="20230313 13:14:49.783" endtime="20230313 13:14:53.905"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20230313 13:14:53.906" endtime="20230313 13:14:53.906"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230313 13:14:53.907" endtime="20230313 13:14:53.907"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230313 13:14:53.907" endtime="20230313 13:14:53.907"/>
+</kw>
+<status status="FAIL" starttime="20230313 13:14:49.782" endtime="20230313 13:14:53.908"/>
+</kw>
+<kw name="clicker sur Cables et fils electrique - Fils de cable" library="test1-1_Cat2-filtre">
+<arg>${Categories}</arg>
+<arg>${Câbles_fils_electrique}</arg>
+<arg>${FILS_DE_CABLE0}</arg>
+<status status="NOT RUN" starttime="20230313 13:14:53.908" endtime="20230313 13:14:53.908"/>
+</kw>
+<kw name="filtrer les produits by attribute" library="test1-1_Cat2-filtre">
+<arg>${Fabricant}</arg>
+<arg>${Couleur}</arg>
+<arg>${Isolation}</arg>
+<arg>${Le_type}</arg>
+<arg>${Matériau_conducteur}</arg>
+<arg>${Mesure_du_fil}</arg>
+<arg>${Taille_Dimension}</arg>
+<arg>${Température}</arg>
+<arg>${Tension}</arg>
+<status status="NOT RUN" starttime="20230313 13:14:53.908" endtime="20230313 13:14:53.908"/>
+</kw>
+<status status="FAIL" starttime="20230313 13:14:49.779" endtime="20230313 13:14:53.909">WebDriverException: Message: unknown error: Chrome failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00CE37D3]
+	(No symbol) [0x00C78B81]
+	(No symbol) [0x00B7B36D]
+	(No symbol) [0x00B9B7EF]
+	(No symbol) [0x00B96FC9]
+	(No symbol) [0x00BD1ED5]
+	(No symbol) [0x00BD1B2C]
+	(No symbol) [0x00BCB216]
+	(No symbol) [0x00BA0D97]
+	(No symbol) [0x00BA253D]
+	GetHandleVerifier [0x00F5ABF2+2510930]
+	GetHandleVerifier [0x00F88EC1+2700065]
+	GetHandleVerifier [0x00F8C86C+2714828]
+	GetHandleVerifier [0x00D93480+645344]
+	(No symbol) [0x00C80FD2]
+	(No symbol) [0x00C86C68]
+	(No symbol) [0x00C86D4B]
+	(No symbol) [0x00C90D6B]
+	BaseThreadInitThunk [0x76DE00F9+25]
+	RtlGetAppContainerNamedObjectPath [0x775F7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x775F7B8E+238]
+</status>
+</test>
+<doc>Cables et fils electrique-Fils de cable_Partie des filtre</doc>
+<status status="FAIL" starttime="20230313 13:14:49.058" endtime="20230313 13:14:53.910"/>
+</suite>
+<status status="FAIL" starttime="20230313 13:14:49.007" endtime="20230313 13:14:53.911"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Projet1- FILS DE CABLE - Filtre">Projet1- FILS DE CABLE - Filtre</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="test1-1 Cat2">Projet1- FILS DE CABLE - Filtre.test1-1 Cat2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

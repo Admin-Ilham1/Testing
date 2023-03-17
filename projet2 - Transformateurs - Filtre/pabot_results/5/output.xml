@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230313 09:33:07.611" rpa="false" schemaversion="3">
+<suite id="s1" name="projet2 - Transformateurs - Filtre" source="C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projet2 - Transformateurs - Filtre">
+<suite id="s1-s1" name="test2-Cat2" source="C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projet2 - Transformateurs - Filtre\test2-Cat2.robot">
+<test id="s1-s1-t1" name="Alimentationa-Transformateurs" line="10">
+<kw name="open the browser with URL" library="resources">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230313 09:33:07.989" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230313 09:33:07.988" endtime="20230313 09:33:10.260"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230313 09:33:10.261" level="INFO">Opening url 'http://192.168.31.31/'</msg>
+<status status="PASS" starttime="20230313 09:33:10.260" endtime="20230313 09:33:12.577"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230313 09:33:12.577" endtime="20230313 09:33:12.691"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:33:18.693" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:12.691" endtime="20230313 09:33:18.693"/>
+</kw>
+<status status="PASS" starttime="20230313 09:33:07.988" endtime="20230313 09:33:18.693"/>
+</kw>
+<kw name="clicker sur alimentations-Transformateurs" library="clickAn-Cat2-Transf">
+<arg>${Categories}</arg>
+<arg>${Alimentations}</arg>
+<arg>${TRANSFORMATEURS2}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 09:33:18.696" level="INFO">Clicking element 'xpath://span[contains(text(),'Categories')]'.</msg>
+<status status="PASS" starttime="20230313 09:33:18.694" endtime="20230313 09:33:18.793"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:33:23.795" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:18.793" endtime="20230313 09:33:23.797"/>
+</kw>
+<kw name="Mouse Down" library="SeleniumLibrary">
+<arg>${Alimentations}</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20230313 09:33:23.810" level="INFO">Simulating Mouse Down on element 'xpath://header/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/div[2]/div[1]/ul[1]/li[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 09:33:23.799" endtime="20230313 09:33:24.113"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:33:29.115" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:24.113" endtime="20230313 09:33:29.115"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TRANSFORMATEURS2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 09:33:29.126" level="INFO">Clicking element 'xpath://a[contains(text(),'Transformateurs')]'.</msg>
+<status status="PASS" starttime="20230313 09:33:29.115" endtime="20230313 09:33:30.539"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:33:35.541" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:30.540" endtime="20230313 09:33:35.541"/>
+</kw>
+<status status="PASS" starttime="20230313 09:33:18.694" endtime="20230313 09:33:35.541"/>
+</kw>
+<kw name="filtrer les produits by attribute" library="Choose-Transf-Filtre2">
+<arg>${Courant_sortie_Max}</arg>
+<arg>${Fréquence_de_fonctio_Max}</arg>
+<arg>${Fréquence_de_fonctio_Min}</arg>
+<arg>${Nombre_de_sortie}</arg>
+<arg>${Taille_Dimension}</arg>
+<arg>${Tension_d_entrée_Max}</arg>
+<arg>${Tension_d_entrée_Min}</arg>
+<arg>${Tension_sortie1}</arg>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${Courant_sortie_Max22}</arg>
+<arg>${Courant_sortie_Max}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230313 09:33:35.543" level="INFO">Selecting options from selection list 'xpath://body/div[@id='wrapper']/main[@id='main']/div[1]/div[1]/div[1]/aside[1]/div[2]/div[2]/div[2]/select[1]' by index 2.</msg>
+<status status="PASS" starttime="20230313 09:33:35.543" endtime="20230313 09:33:35.698"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:33:41.699" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:35.698" endtime="20230313 09:33:41.703"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${Fréquence_de_fonctio_Max22}</arg>
+<arg>${Fréquence_de_fonctio_Max}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230313 09:33:41.704" level="INFO">Selecting options from selection list 'xpath://body/div[@id='wrapper']/main[@id='main']/div[1]/div[1]/div[1]/aside[1]/div[2]/div[2]/div[2]/select[1] ' by index 1.</msg>
+<status status="PASS" starttime="20230313 09:33:41.704" endtime="20230313 09:33:41.927"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:33:46.929" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:41.927" endtime="20230313 09:33:46.929"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${Fréquence_de_fonctio_Min22}</arg>
+<arg>${Fréquence_de_fonctio_Min}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230313 09:33:46.937" level="INFO">Selecting options from selection list 'xpath://body/div[@id='wrapper']/main[@id='main']/div[1]/div[1]/div[1]/aside[1]/div[2]/div[3]/div[2]/select[1]' by index 1.</msg>
+<status status="PASS" starttime="20230313 09:33:46.929" endtime="20230313 09:33:47.109"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:33:52.110" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:47.110" endtime="20230313 09:33:52.110"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${Nombre_de_sortie22}</arg>
+<arg>${Nombre_de_sortie}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230313 09:33:52.115" level="INFO">Selecting options from selection list 'xpath://body/div[@id='wrapper']/main[@id='main']/div[1]/div[1]/div[1]/aside[1]/div[2]/div[4]/div[2]/select[1]' by index 1.</msg>
+<status status="PASS" starttime="20230313 09:33:52.110" endtime="20230313 09:33:52.296"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:33:57.299" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:52.297" endtime="20230313 09:33:57.299"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${Taille_Dimension22}</arg>
+<arg>${Taille_Dimension}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230313 09:33:57.299" level="INFO">Selecting options from selection list 'xpath://body/div[@id='wrapper']/main[@id='main']/div[1]/div[1]/div[1]/aside[1]/div[2]/div[5]/div[2]/select[1]' by index 1.</msg>
+<status status="PASS" starttime="20230313 09:33:57.299" endtime="20230313 09:33:57.482"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:34:02.484" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:33:57.482" endtime="20230313 09:34:02.485"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${Tension_d_entrée_Max22}</arg>
+<arg>${Tension_d_entrée_Max}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230313 09:34:02.486" level="INFO">Selecting options from selection list 'xpath://body/div[@id='wrapper']/main[@id='main']/div[1]/div[1]/div[1]/aside[1]/div[2]/div[6]/div[2]/select[1]' by index 1.</msg>
+<status status="PASS" starttime="20230313 09:34:02.486" endtime="20230313 09:34:02.648"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:34:07.650" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:34:02.649" endtime="20230313 09:34:07.651"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${Tension_d_entrée_Min22}</arg>
+<arg>${Tension_d_entrée_Min}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230313 09:34:07.654" level="INFO">Selecting options from selection list 'xpath://body/div[@id='wrapper']/main[@id='main']/div[1]/div[1]/div[1]/aside[1]/div[2]/div[7]/div[2]/select[1]' by index 1.</msg>
+<status status="PASS" starttime="20230313 09:34:07.653" endtime="20230313 09:34:07.810"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:34:12.816" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:34:07.810" endtime="20230313 09:34:12.817"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${Tension_sortie22}</arg>
+<arg>${Tension_sortie1}</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230313 09:34:12.823" level="INFO">Selecting options from selection list 'xpath://body/div[@id='wrapper']/main[@id='main']/div[1]/div[1]/div[1]/aside[1]/div[2]/div[8]/div[2]/select[1]' by index 1.</msg>
+<status status="PASS" starttime="20230313 09:34:12.819" endtime="20230313 09:34:12.947"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:34:17.949" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 09:34:12.948" endtime="20230313 09:34:17.949"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_filtre}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 09:34:17.949" level="INFO">Clicking element 'xpath://button[contains(text(),'Filtre')]'.</msg>
+<status status="PASS" starttime="20230313 09:34:17.949" endtime="20230313 09:34:19.864"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:34:23.866" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230313 09:34:19.864" endtime="20230313 09:34:23.866"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PRODUITS_2}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230313 09:34:23.866" endtime="20230313 09:34:23.996"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 09:34:26.999" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230313 09:34:23.996" endtime="20230313 09:34:26.999"/>
+</kw>
+<status status="PASS" starttime="20230313 09:33:35.541" endtime="20230313 09:34:26.999"/>
+</kw>
+<status status="PASS" starttime="20230313 09:33:07.985" endtime="20230313 09:34:26.999"/>
+</test>
+<doc>Alimentationa-Transformateurs_Partie des filtres</doc>
+<status status="PASS" starttime="20230313 09:33:07.670" endtime="20230313 09:34:26.999"/>
+</suite>
+<status status="PASS" starttime="20230313 09:33:07.629" endtime="20230313 09:34:27.014"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="projet2 - Transformateurs - Filtre">projet2 - Transformateurs - Filtre</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="test2-Cat2">projet2 - Transformateurs - Filtre.test2-Cat2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230313 14:41:54.823" rpa="false" schemaversion="3">
+<suite id="s1" name="projert1 - FILS DE CABLE - Quantite" source="C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projert1 - FILS DE CABLE - Quantite">
+<suite id="s1-s1" name="test3-Quantité" source="C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projert1 - FILS DE CABLE - Quantite\test3-Quantité.robot">
+<test id="s1-s1-t1" name="Cables et fils electrique-Fils de cable" line="10">
+<kw name="open the browser with URL" library="resources">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230313 14:41:55.299" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230313 14:41:55.299" endtime="20230313 14:42:01.355"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230313 14:42:01.356" level="INFO">Opening url 'http://192.168.31.31/'</msg>
+<status status="PASS" starttime="20230313 14:42:01.355" endtime="20230313 14:42:05.939"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230313 14:42:05.940" endtime="20230313 14:42:06.339"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:42:12.340" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20230313 14:42:06.339" endtime="20230313 14:42:12.340"/>
+</kw>
+<status status="PASS" starttime="20230313 14:41:55.299" endtime="20230313 14:42:12.340"/>
+</kw>
+<kw name="click an Cables et fils electrique-Fils de cable" library="clickAn">
+<arg>${Categories}</arg>
+<arg>${Câbles_fils}</arg>
+<arg>${FILS_CABLE}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:42:12.343" level="INFO">Clicking element 'xpath://span[contains(text(),'Categories')]'.</msg>
+<status status="PASS" starttime="20230313 14:42:12.342" endtime="20230313 14:42:12.485"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:42:17.486" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 14:42:12.485" endtime="20230313 14:42:17.487"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Câbles_fils}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:42:17.488" level="INFO">Clicking element 'xpath://header/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/div[2]/div[1]/ul[1]/li[2]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:42:17.487" endtime="20230313 14:42:20.494"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:42:25.495" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 14:42:20.494" endtime="20230313 14:42:25.495"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FILS_CABLE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:42:25.496" level="INFO">Clicking element 'css:body.page-template-default.page.page-id-837.theme-flatsome.woocommerce-js.yith-wcan-pro.lightbox.nav-dropdown-has-shadow.nav-dropdown-has-border.page-template-blank.page-template-blank-php:nth-child(2) div.content-area section.section:nth-child(3) div.section-content.relative:nth-child(2) div.row div.col.medium-4.small-12.large-4:nth-child(3) div.col-inner.box-shadow-3:nth-child(1) div.row.row-collapse div.col.medium-8.large-8:nth-child(2) div.col-inner h3:nth-child(2) &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20230313 14:42:25.495" endtime="20230313 14:42:32.636"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:42:37.638" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 14:42:32.637" endtime="20230313 14:42:37.639"/>
+</kw>
+<status status="PASS" starttime="20230313 14:42:12.341" endtime="20230313 14:42:37.639"/>
+</kw>
+<kw name="clicker sur un produit et voir le panier" library="Choose3_Quantite">
+<arg>${clicker_Produit}</arg>
+<arg>${Ajout_Panier}</arg>
+<arg>${Voirr_Panier}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:42:42.642" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 14:42:37.642" endtime="20230313 14:42:42.642"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clicker_Produit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:42:42.644" level="INFO">Clicking element 'xpath://a[contains(text(),'cable souple 16mm')]'.</msg>
+<status status="PASS" starttime="20230313 14:42:42.643" endtime="20230313 14:42:48.835"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:42:53.836" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 14:42:48.835" endtime="20230313 14:42:53.836"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Ajout_Panier}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:42:53.837" level="INFO">Clicking element 'xpath://button[contains(text(),'Ajouter au panier')]'.</msg>
+<status status="PASS" starttime="20230313 14:42:53.836" endtime="20230313 14:43:01.087"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:43:04.089" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230313 14:43:01.087" endtime="20230313 14:43:04.089"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Voirr_Panier}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:43:04.091" level="INFO">Clicking element 'xpath://header/div[1]/div[1]/div[1]/div[4]/ul[1]/li[3]/ul[1]/li[1]/div[1]/p[2]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:43:04.089" endtime="20230313 14:43:15.506"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:43:20.508" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 14:43:15.507" endtime="20230313 14:43:20.510"/>
+</kw>
+<status status="PASS" starttime="20230313 14:42:37.640" endtime="20230313 14:43:20.511"/>
+</kw>
+<kw name="Eliminer le produit (0 Produits)" library="Choose3_Quantite">
+<arg>${Soustracter_nbr_produit}</arg>
+<arg>${Mettre_à_jour_panier}</arg>
+<arg>${Retour_à_la_boutique}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Soustracter_nbr_produit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:43:20.513" level="INFO">Clicking element 'xpath://tbody/tr[1]/td[5]/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20230313 14:43:20.512" endtime="20230313 14:43:20.597"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:43:23.598" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230313 14:43:20.598" endtime="20230313 14:43:23.598"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Mettre_à_jour_panier}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:43:23.599" level="INFO">Clicking element 'xpath: // button[contains(text(), 'Mettre à jour le panier')]'.</msg>
+<status status="PASS" starttime="20230313 14:43:23.598" endtime="20230313 14:43:23.668"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:43:30.669" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20230313 14:43:23.669" endtime="20230313 14:43:30.669"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Retour_à_la_boutique}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:43:30.670" level="INFO">Clicking element 'xpath://a[contains(text(),'Retour à la boutique')]'.</msg>
+<msg timestamp="20230313 14:43:30.801" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:43:30.801" level="FAIL">Element with locator 'xpath://a[contains(text(),'Retour à la boutique')]' not found.</msg>
+<status status="FAIL" starttime="20230313 14:43:30.669" endtime="20230313 14:43:30.805"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230313 14:43:30.805" endtime="20230313 14:43:30.805"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Categories}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230313 14:43:30.806" endtime="20230313 14:43:30.806"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230313 14:43:30.807" endtime="20230313 14:43:30.808"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Fils_de_cable}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230313 14:43:30.808" endtime="20230313 14:43:30.808"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230313 14:43:30.808" endtime="20230313 14:43:30.809"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PRODUITS_2_Fils_de_cable}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230313 14:43:30.809" endtime="20230313 14:43:30.810"/>
+</kw>
+<status status="FAIL" starttime="20230313 14:43:20.511" endtime="20230313 14:43:30.810"/>
+</kw>
+<status status="FAIL" starttime="20230313 14:41:55.299" endtime="20230313 14:43:30.811">Element with locator 'xpath://a[contains(text(),'Retour à la boutique')]' not found.</status>
+</test>
+<doc>Cables et fils electrique-Fils de cable_Partie de Commande</doc>
+<status status="FAIL" starttime="20230313 14:41:54.875" endtime="20230313 14:43:30.813"/>
+</suite>
+<status status="FAIL" starttime="20230313 14:41:54.835" endtime="20230313 14:43:30.815"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="projert1 - FILS DE CABLE - Quantite">projert1 - FILS DE CABLE - Quantite</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="test3-Quantité">projert1 - FILS DE CABLE - Quantite.test3-Quantité</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

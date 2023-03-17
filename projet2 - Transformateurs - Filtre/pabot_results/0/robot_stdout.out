@@ -1,0 +1,36 @@
+==============================================================================
+projet2 - Transformateurs - Filtre                                            
+==============================================================================
+projet2 - Transformateurs - Filtre.Test1 :: Alimentationa-Transformateurs_P...
+==============================================================================
+Alimentationa-Transformateurs                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projet2 - Transformateurs - Filtre\test1.robot:8
+    T:  Alimentationa-Transformateurs    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projet2 - Transformateurs - Filtre\test1.robot:11
+      filtrer les produits by attribute    ${Fabricant}    ${Courant_sortie_Max}    ${Fréquence_de_fonctio_Max}    ${Fréquence_de_fonctio_Min}    ${Nombre_de_sortie}    ${Puissance}    ${Température_de_foncti}    ${Tension_sortie1}
+      |  ${Fabricant} = 1 (str)
+      |  ${Courant_sortie_Max} = 1 (str)
+      |  ${Fréquence_de_fonctio_Max} = 1 (str)
+      |  ${Fréquence_de_fonctio_Min} = 1 (str)
+      |  ${Nombre_de_sortie} = 1 (str)
+      |  ${Puissance} = 1 (str)
+      |  ${Température_de_foncti} = 1 (str)
+      |  ${Tension_sortie1} = 1 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\PO\test1-filtre_Transformateurs.robot:51
+      Wait Until Element Is Visible    ${PRODUITS_1}
+      |  ${PRODUITS_1} = xpath://a[contains(text(),'Transformateur myrra 230V 6V 800mA')] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://a[contains(text(),'Transformateur myrra 230V 6V 800mA')]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+projet2 - Transformateurs - Filtre.Test1 :: Alimentationa-Transfor... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+projet2 - Transformateurs - Filtre                                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projet2 - Transformateurs - Filtre\pabot_results\0\output.xml
