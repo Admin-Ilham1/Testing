@@ -3,29 +3,12 @@ projert1 - FILS DE CABLE - Quantite
 ==============================================================================
 projert1 - FILS DE CABLE - Quantite.test5-4-Quantité :: Cables et fils elec...
 ==============================================================================
-Cables et fils electrique-Fils de cable                                 
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projert1 - FILS DE CABLE - Quantite\test5-4-Quantité.robot:10
-    T:  Cables et fils electrique-Fils de cable    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projert1 - FILS DE CABLE - Quantite\test5-4-Quantité.robot:14
-      Eliminer le produit (0 Produits)    ${Soustracter_nbr_produit}    ${Mettre_à_jour_panier}    ${Retour_à_la_boutique}
-      |  ${Soustracter_nbr_produit} = xpath://tbody/tr[1]/td[5]/div[1]/input[1] (str)
-      |  ${Mettre_à_jour_panier} = xpath: // button[contains(text(), 'Mettre à jour le panier')] (str)
-      |  ${Retour_à_la_boutique} = xpath://a[contains(text(),'Retour à la boutique')] (str)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\PO\Choose5-4_Quantite.robot:23
-      Click Element    ${Retour_à_la_boutique}
-      |  ${Retour_à_la_boutique} = xpath://a[contains(text(),'Retour à la boutique')] (str)
-______________________________________________________________________________
-| FAIL |
-Element with locator 'xpath://a[contains(text(),'Retour à la boutique')]' not found.
+Cables et fils electrique-Fils de cable                               | PASS |
 ------------------------------------------------------------------------------
-projert1 - FILS DE CABLE - Quantite.test5-4-Quantité :: Cables et ... | FAIL |
-1 test, 0 passed, 1 failed
+projert1 - FILS DE CABLE - Quantite.test5-4-Quantité :: Cables et ... | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-projert1 - FILS DE CABLE - Quantite                                   | FAIL |
-1 test, 0 passed, 1 failed
+projert1 - FILS DE CABLE - Quantite                                   | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Output:  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject13\projert1 - FILS DE CABLE - Quantite\pabot_results\7\output.xml
+Output:  C:\Users\Ilham BOURHAIM\PycharmProjects\pythonProject14\projert1 - FILS DE CABLE - Quantite\pabot_results\7\output.xml
