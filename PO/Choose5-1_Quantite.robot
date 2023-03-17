@@ -19,7 +19,7 @@ Eliminer le produit (0 Produits)
                   click element          ${Soustracter_nbr_produit}
                  sleep      3
                  click element          ${Mettre_à_jour_panier}                                 ### 0 Produits
-                 sleep      7
+                 sleep      9
                  click element          ${Retour_à_la_boutique}
                  sleep      5
                  wait until element is visible          ${Categories}
